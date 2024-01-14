@@ -1,79 +1,100 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* blacks */
+  --black: #000;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* blues */
+  --blue: #3a86ff;
+
+  /* greens */
+  --green: #248824;
+  --green-light: #12aa12;
+  --green-dark: #125012;
+  
+  /* greys */
+  --grey: #424242;
+  --grey-dark: #212121;
+
+  /* oranges */
+  --orange: #ff9770;
+  
+  /* purples */
+  --purple: #C90FD1;
+  --purple-dark: #450547;
+
+  /* reds */
+  --red: #ab3030;
+  --red-dark: #501212;
+
+  /* yellows */
+  --yellow: #EAAB3D;
+  --yellow-dark: #7a5920;
+
+  /* whites */
+  --white: #DAE1DE;
+
+  /* font sizes */
+  font-size: 10px;
+  --fs-small: 1.2rem;
+  --fs-medium: 1.6rem;
+  --fs-big: 3.2rem;
+  
+  /* font weights */
+  --fw-small: 400;
+  --fw-medium: 700;
+  --fw-big: 900;
+
+  /* borders */
+  
+  --border-width-small: 4px;
+  --border-width-medium: 8px;
+ 
+  --border-radius: 8px;
+  --border-radius-round: 50%;
+
+  /* paddings */
+  
+  --padding-small: 4px;
+  --padding-medium: 8px;
+  --padding-big: 16px;
+  --padding-huge: 24px;
+
+  /* shadows */
+  
+  --text-shadow-small:
+    -1px 1px 1px var(--black),
+    -2px 2px 1px var(--black),
+    -3px 3px 1px var(--black);
+
+  --text-shadow-medium:
+    -1px 1px 1px var(--black),
+    -2px 2px 1px var(--black),
+    -3px 3px 1px var(--black),
+    -4px 4px 1px var(--black),
+    -5px 5px 1px var(--black);
+  
+  --box-shadow:
+    -1px 1px 0px var(--black),
+    -2px 2px 0px var(--black),
+    -3px 3px 0px var(--black),
+    -4px 4px 0px var(--black),
+    -5px 5px 0px var(--black);
+  
+  --box-shadow-inset:
+    inset -1px 1px 0px var(--black),
+    inset -2px 2px 0px var(--black),
+    inset -3px 3px 0px var(--black),
+    inset -4px 4px 0px var(--black),
+    inset -5px 5px 0px var(--black);
+
+  /* gradients */
+  --blue-to-orange: linear-gradient(to bottom, var(--orange), var(--blue));
+
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+html, body, #app {
+  padding: 0;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  height: 100%;
+  min-height: 100%;
 }
